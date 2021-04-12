@@ -1,6 +1,9 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import javax.print.attribute.standard.QueuedJobCount;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 public class StackTest {
@@ -32,20 +35,5 @@ public class StackTest {
         INode peak = stack.peak();
         Assertions.assertEquals(secondNode, peak);
     }
-
-    @Test
-    public void given3Nums_WhenEnqueue_FirstAdded_ShouldBeAtTop(){
-        Node<Integer> firstNode = new Node<>(56);
-        Node<Integer> secondNode = new Node<>(30);
-        Node<Integer> thirdNode = new Node<>(70);
-        StackClass stack = new StackClass();
-        stack.append(firstNode);
-        stack.append(secondNode);
-        stack.append(thirdNode);
-        stack.printStack();
-        INode peak = stack.peak();
-        Assertions.assertEquals(firstNode, peak);
-    }
-
 
 }
