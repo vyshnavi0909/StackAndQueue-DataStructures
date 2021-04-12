@@ -21,7 +21,4 @@ public class StackClass {
         return linkedList.pop();
     }
 
-    public void append(INode node) {
-        linkedList.append(node);
-    }
 }
