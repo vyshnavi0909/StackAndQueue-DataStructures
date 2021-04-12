@@ -1,4 +1,5 @@
 public class QueueClass {
+
     private final NewLinkedList linkedList;
 
     public QueueClass() {
@@ -15,6 +16,11 @@ public class QueueClass {
 
     public void printQueue() {
         linkedList.printNodes();
+    }
+
+
+    public INode deque() {
+        return linkedList.popLast();
     }
 
 }
