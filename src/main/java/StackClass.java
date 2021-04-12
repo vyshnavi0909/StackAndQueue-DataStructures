@@ -20,4 +20,8 @@ public class StackClass {
     public INode pop() {
         return linkedList.pop();
     }
+
+    public void append(INode node) {
+        linkedList.append(node);
+    }
 }
