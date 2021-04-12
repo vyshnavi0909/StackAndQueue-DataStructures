@@ -16,4 +16,8 @@ public class StackClass {
     public INode peak() {
         return linkedList.head;
     }
+
+    public INode pop() {
+        return linkedList.pop();
+    }
 }

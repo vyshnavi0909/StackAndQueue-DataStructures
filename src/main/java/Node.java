@@ -21,7 +21,7 @@ public class Node<T> implements INode<T> {
         return next;
     }
 
-    public void setNext(INode next) {
+    public void setNext(INode next)                          {
         this.next = (Node<T>) next;
     }
 }
