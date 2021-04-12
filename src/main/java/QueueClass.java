@@ -17,4 +17,8 @@ public class QueueClass {
     public INode peak() {
         return linkedList.head;
     }
+
+    public INode deque() {
+        return linkedList.popLast();
+    }
 }
